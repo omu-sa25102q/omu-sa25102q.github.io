@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>動く時計</title>
-    <script>
-        function updateClock() {
+function updateClock() {
             // 現在時刻を取得
             var now = new Date();
             var hours = now.getHours();
@@ -26,14 +20,3 @@
         
         // ページ読み込み時に即座に表示
         window.onload = updateClock;
-    </script>
-</head>
-<body>
-    <h1>現在時刻</h1>
-    <div id="clock" style="font-size: 48px; font-weight: bold; color: blue;">
-        00:00:00
-    </div>
-    
-    <!-- ここに既存のコンテンツを配置 -->
-</body>
-</html>
